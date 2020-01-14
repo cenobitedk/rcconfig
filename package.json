@@ -1,0 +1,30 @@
+{
+  "name": "rcload",
+  "version": "1.0.0",
+  "description": "Find and load json configuration from a package.json property, rc file, or CommonJS module",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cenobitedk/rcconfig.git"
+  },
+  "author": "Jeppe Hasseriis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cenobitedk/rcconfig/issues"
+  },
+  "homepage": "https://github.com/cenobitedk/rcconfig#readme",
+  "keywords": [
+    "rc",
+    "config",
+    "json"
+  ]
+}
