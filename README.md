@@ -2,7 +2,7 @@
 
 Find and load json configuration from a package.json property, rc file, or CommonJS module.
 
-Heavily inspired by [cosmiconfig](https://www.npmjs.com/package/cosmiconfig), but super simplified for minimal bundlesize.
+Heavily inspired by [cosmiconfig](https://www.npmjs.com/package/cosmiconfig), but super simplified for minimal bundlesize.  
 The big difference from cosmiconfig is that **rcload does not support yaml files**.
 
 **rcload** will search for the following:
@@ -13,6 +13,13 @@ The big difference from cosmiconfig is that **rcload does not support yaml files
 - a `.config.js` CommonJS module
 
 It is also meant as a partial drop-in replacement which means it return a `result` object same as cosmiconfig.
+
+## Differences from [cosmiconfig](https://www.npmjs.com/package/cosmiconfig)
+
+- Supports only JSON and CommonJS formats.
+- Only looks in `process.cwd()`.
+- Limited options.
+- Only synchronous load.
 
 ## Usage
 
@@ -64,10 +71,3 @@ rcload('myapp', {
     cwd: path.join(process.cwd(), 'configs')
 })
 ```
-
-## Differences from [cosmiconfig](https://www.npmjs.com/package/cosmiconfig)
-
-- Supports only JSON and CommonJS formats.
-- Only looks in `process.cwd()`.
-- Limited options.
-- Only synchronous load.
